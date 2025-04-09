@@ -1,6 +1,5 @@
 .header {
-  background-color: white;
-  border-bottom: 2px solid #b30000;
+  border-bottom: 2px solid #c90900;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   height: 80px;
   display: flex;
@@ -13,7 +12,7 @@
     .logo {
       font-size: 2rem;
       font-weight: 700;
-      color: #b30000;
+      color: #c90900;
       letter-spacing: 2px;
       font-family: "Bungee Tint", sans-serif;
       font-weight: 400;
@@ -33,7 +32,7 @@
 }
 
 .mat-button-toggle-appearance-standard.mat-button-toggle-checked {
-  background-color: #b30000;
+  background-color: #c90900;
   color: white;
 }
 
