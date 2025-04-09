@@ -8,10 +8,10 @@
     gap: 10px;
 
     .back {
+      margin-top: 5px;
       height: 25px;
       width: 25px;
       background-color: white;
-      border: 1px solid #990000;
       color: #990000;
       display: flex;
       justify-content: center;
@@ -25,8 +25,7 @@
 
       &:hover,
       &:active {
-        background-color: #990000;
-        color: white;
+        color: #b30000;
       }
     }
 
