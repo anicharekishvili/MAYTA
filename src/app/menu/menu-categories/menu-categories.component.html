@@ -1,0 +1,15 @@
+<div class="menu_categories">
+  <div class="container">
+    <h2>კატეგორიები</h2>
+
+    <div class="categories">
+      @for(item of menuData; track item.id) {
+      <div class="categories_item" (click)="openCategory(item.id)">
+        <div class="bg"></div>
+        <div class="overlay"></div>
+        <p>{{ item.name }}</p>
+      </div>
+      }
+    </div>
+  </div>
+</div>

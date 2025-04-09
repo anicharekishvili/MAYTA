@@ -1,0 +1,73 @@
+.menu_categories {
+  padding: 40px 0;
+  h2 {
+    color: #990000;
+    margin-bottom: 30px;
+  }
+
+  .categories {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &_item {
+      width: 180px;
+      height: 180px;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+
+      .bg {
+        width: 100%;
+        height: 100%;
+        background-image: url("https://static.blog.bolt.eu/LIVE/wp-content/uploads/2024/05/10110345/different-types-of-sushi-1024x536.jpg");
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.4s ease;
+      }
+
+      &:hover .bg,
+      &:active .bg {
+        transform: scale(1.1);
+      }
+
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100px;
+        width: 100%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+        border-radius: 0 0 10px 10px;
+        z-index: 1;
+
+        @media only screen and (max-width: 430px) {
+          height: 150px;
+        }
+      }
+
+      p {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        color: white;
+        z-index: 2;
+        margin: 0;
+        font-weight: 600;
+
+        @media only screen and (max-width: 430px) {
+          font-size: 25px;
+        }
+      }
+
+      @media only screen and (max-width: 430px) {
+        width: 100%;
+        height: 250px;
+      }
+    }
+  }
+}
