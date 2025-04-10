@@ -24,20 +24,22 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
 
-        i {
-          color: var(--accent-color);
-          font-size: 30px;
-          margin-bottom: 8px;
-
-          &:hover,
-          &:active {
-            font-size: 35px;
+        &.active {
+          i {
+            color: var(--accent-color);
           }
         }
 
+        i {
+          color: var(--text-color);
+          font-size: 25px;
+          margin-bottom: 8px;
+        }
+
         p {
-          font-size: 15px;
+          font-size: 13px;
           color: var(--text-color);
         }
       }
