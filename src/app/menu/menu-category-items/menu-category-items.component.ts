@@ -33,7 +33,6 @@ export class MenuCategoryItemsComponent {
       this.dataById = data.categories.find(
         (category: any) => category.id === id
       );
-      console.log('Active category:', this.dataById);
     });
   }
 

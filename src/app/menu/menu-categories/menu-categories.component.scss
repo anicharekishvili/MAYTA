@@ -1,7 +1,7 @@
 .menu_categories {
   padding: 40px 0;
   h2 {
-    color: #d32f2f;
+    color: var(--accent-color);
     margin-bottom: 35px;
     font-size: 30px;
     font-weight: 700;
@@ -16,7 +16,7 @@
 
     &_item {
       height: 180px;
-      border-radius: 10px;
+      border-radius: 35px;
       overflow: hidden;
       position: relative;
       cursor: pointer;
@@ -42,15 +42,15 @@
         height: 130px;
         width: 100%;
         background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-        border-radius: 0 0 10px 10px;
+        border-radius: 0 0 35px 35px;
         z-index: 1;
       }
 
       p {
         position: absolute;
-        bottom: 10px;
-        left: 10px;
-        color: white;
+        bottom: 20px;
+        left: 15px;
+        color: var(--secondary-text);
         z-index: 2;
         margin: 0;
         font-weight: 600;

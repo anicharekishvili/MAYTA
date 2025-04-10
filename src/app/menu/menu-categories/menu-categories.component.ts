@@ -23,6 +23,6 @@ export class MenuCategoriesComponent {
   }
 
   openCategory(id: number) {
-    this.router.navigate([id]);
+    this.router.navigate(['categories', id]);
   }
 }
