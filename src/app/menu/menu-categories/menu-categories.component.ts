@@ -12,13 +12,20 @@ import { MenuService } from '../../service/menu.service';
 })
 export class MenuCategoriesComponent {
   menuData: any;
+  isGeo: string = 'geo';
 
-  constructor(private menuService: MenuService, private router: Router) {}
+  constructor(private menuService: MenuService, private router: Router) {
+    this.isGeo = this.menuService.getLanguage();
+    console.log(this.isGeo);
+  }
 
   ngOnInit() {
     this.menuService.getMenyData().subscribe((data) => {
       this.menuData = data.categories;
       console.log(this.menuData);
+    });
+    this.menuService.isGeo$.subscribe((lang) => {
+      this.isGeo = lang;
     });
   }
 

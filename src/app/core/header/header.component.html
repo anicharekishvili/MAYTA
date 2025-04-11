@@ -19,10 +19,14 @@
         <mat-button-toggle-group
           name="fontStyle"
           aria-label="Font Style"
-          [value]="'ka'"
+          [value]="langValue"
         >
-          <mat-button-toggle value="ka">Ka</mat-button-toggle>
-          <mat-button-toggle value="en">En</mat-button-toggle>
+          <mat-button-toggle value="geo" (change)="onLanguageChange('geo')"
+            >Ka</mat-button-toggle
+          >
+          <mat-button-toggle value="eng" (change)="onLanguageChange('eng')"
+            >En</mat-button-toggle
+          >
         </mat-button-toggle-group>
       </div>
     </div>
